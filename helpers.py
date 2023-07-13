@@ -3,7 +3,7 @@ import os.path as op
 import dask.dataframe as dd
 import pandas as pd
 
-import secrets
+import config
 
 from ast import literal_eval
 
@@ -372,8 +372,8 @@ class Data:
 
         # configure S3-necessary things...
         self.aws_storage_options = {
-            'key': secrets.AWS_ACCESS_KEY_ID,
-            'secret': secrets.AWS_SECRET_ACCESS_KEY,
+            'key': config.AWS_ACCESS_KEY_ID,
+            'secret': config.AWS_SECRET_ACCESS_KEY,
         }
 
     # full Twitter CSV dataframes ---------------------------------------------

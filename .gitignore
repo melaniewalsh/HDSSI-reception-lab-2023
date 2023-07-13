@@ -4,7 +4,7 @@ __pycache__
 
 !.gitignore
 
-secrets.py
+config.py
 
 # naomi's
 images/
