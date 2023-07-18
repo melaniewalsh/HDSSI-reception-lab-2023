@@ -443,3 +443,7 @@ class Data:
     def get_resampled_day_birthday_count_df(self, fn='day_birthday_tweet-count.csv'):
         '''Load retweet counts, grouped by tweet and resampled by Day.'''
         return self.read_resampled_df(fn, index_col='retweet_date')
+
+    def get_resampled_day_blm_count_df(self, fn='day_blm_tweet-count.csv'):
+        '''Load retweet counts, grouped by tweet and BLM mentions.'''
+        return self.read_resampled_df(fn, index_col='retweet_date')
